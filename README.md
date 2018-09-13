@@ -8,4 +8,4 @@ Predicting Bone Age of a child when given the X-Ray Image of Hand and Gender. <b
 # TO DO
 Write up pending <br>
 Data Vis 
-
+Upload PyTorch checkpoint file
