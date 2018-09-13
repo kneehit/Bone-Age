@@ -5,5 +5,7 @@ Predicting Bone Age of a child when given the X-Ray Image of Hand and Gender of 
 
 ![alt text](images/flowchart.png)
 
-
+# TO DO
+Write up pending
+Data Vis 
 
