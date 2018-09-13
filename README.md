@@ -2,6 +2,9 @@
 Predicting Bone Age of a child when given the X-Ray Image of Hand and Gender. <br>
 
 
+## Flowchart of Neural Network Architecture <br>
+
+
 
 ![alt text](images/flowchart.png)
 
