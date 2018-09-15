@@ -1,5 +1,6 @@
-# Bone Age
-<br>
+# Bone Age Predictor
+
+
 ## Description
 Predicting Bone Age of a child when given the X-Ray Image of Hand and Gender. <br>
 Dataset - https://www.kaggle.com/kmader/rsna-bone-age
