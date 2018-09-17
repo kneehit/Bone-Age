@@ -5,12 +5,12 @@
 Predicting Bone Age of a child when given the X-Ray Image of Hand and Gender. <br>
 Dataset - https://www.kaggle.com/kmader/rsna-bone-age
 
-## Neural Network Architecture <br>
+## Neural Network Architecture 
 
 ![alt text](images/flowchart.png)
 
-
-
+<br>
+<br>
 ## Motivation behind selecting this project
 1. Image data as well as categorical data is avaiable and will require custom neural network architecture.
 2. Unlike most image classification problem, the target variable is continuous.
