@@ -11,7 +11,9 @@ Dataset - https://www.kaggle.com/kmader/rsna-bone-age
 
 
 
+
+
+
 ### TO DO
 Write up pending <br>
-Data Vis <br>
-Upload PyTorch checkpoint file
+Upload PyTorch checkpoint to drive
