@@ -13,13 +13,8 @@ Dataset - https://www.kaggle.com/kmader/rsna-bone-age
 <br>
 
 ## Motivation
-This project was chosen for following reasons:
-1. Image data as well as categorical data is avaiable and hence will require customized model.
-2. Unlike most image classification problem, the target variable is continuous.
-3. Since the ouput is continuous, the network can predict negative values (when age can only be positive).
+This project was chosen as it is unique in following ways:
+1. Image data as well as categorical data is provided and hence will require customized model.
+2. Unlike most image recognition problem, the target variable is continuous.
+3. Since the ouput is continuous, the network can predict negative values (whereas age can only be positive).
 
-
-
-### TO DO
-Write up pending <br>
-Upload PyTorch checkpoint to drive
