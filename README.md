@@ -15,6 +15,6 @@ Dataset - https://www.kaggle.com/kmader/rsna-bone-age
 ## Motivation
 This project was chosen as it is unique in following ways:
 1. Image data as well as categorical data is provided and hence will require customized model.
-2. Unlike most image recognition problem, the target variable is continuous.
+2. Unlike most image recognition problem, the target variable is continuous and input image has only single channel.
 3. Since the ouput is continuous, the network can predict negative values (whereas age can only be positive).
 
