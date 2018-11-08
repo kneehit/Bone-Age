@@ -374,6 +374,18 @@ print(rmse)
 
 #%%
 
+def display_preds(num):
+    idx = random.sample(range(0, test_df.shape[0]), num)
+    for i in idx:
+        image = cv2.imread(test_dataset_path + str(test_df['id'][i]) + '.png')
+        image = cv2.resize(image,(500,500))
+        cv2.putText(image,'Actual:' + str(test_df['boneage'][i]),(20,50), cv2.FONT_HERSHEY_SIMPLEX, 1,(255,255,255))
+        cv2.putText(image,'Predicted:' + str(test_df['output'][i]),(20,100), cv2.FONT_HERSHEY_SIMPLEX, 1,(255,255,255))
+        cv2.imshow('Bone Age Prediction',image)
+        cv2.waitKey(0)
+        cv2.destroyAllWindows()
+        
+display_preds(4)
 
    
 
