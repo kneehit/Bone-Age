@@ -275,7 +275,7 @@ def eval_model(model,data_loader):
             
             result_array = np.concatenate((result_array,preds))
             
-            return result_array
+         return result_array
     
 
 
