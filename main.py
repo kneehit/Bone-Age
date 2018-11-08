@@ -368,6 +368,12 @@ test_df['output'] = result_array
 test_df['output'] = np.round(test_df['output'], decimals=2)
 test_df = test_df.reset_index()
 
+#%%
+rmse = np.sqrt(mean_squared_error(test_df['boneage'], test_df['output']))
+print(rmse)
+
+#%%
+
 
    
 
