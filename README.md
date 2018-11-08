@@ -16,7 +16,6 @@ This project was chosen as it is unique in following ways:
 3. Since the ouput is continuous, the network can predict negative values (whereas age can only be positive).
 
 ## Result
-RMSE - 25.5
-
+Predictions on the test set can be seen below
 
 ![alt text](images/pred_on_test.gif)
