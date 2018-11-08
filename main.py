@@ -29,7 +29,8 @@ from age_predictor_model import age_predictor
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
- 
+# os.chdir('/home/kneehit/Data Science/Bone Age Kaggle/PyTorch')
+
 
 #%%
 # paths
@@ -82,8 +83,9 @@ print('Approx. Standard Deviation of Images in Dataset: ',avg_std)
 
 
 
-
-
+# To reproduce results use below values
+#avg_mean = 52.96
+#avg_std = 26.19
 #%%
 
 # Split Train Validation Test
@@ -238,9 +240,9 @@ scheduler = lr_scheduler.StepLR(optimizer, step_size=12, gamma=0.5)
 #%% To Resume Training 
 
 
-#checkpoint = torch.load('epoch-2-loss-0.0322-val_loss-0.0174.pth.tar')
+#checkpoint = torch.load('epoch-25-loss-0.0194-val_loss-0.0085.pth.tar')
 #start_epoch = checkpoint['epoch']
-#resnet_model.load_state_dict(checkpoint['state_dict'])
+#age_predictor.load_state_dict(checkpoint['state_dict'])
 #optimizer.load_state_dict(checkpoint['optimizer'])
 #scheduler.load_state_dict(checkpoint['scheduler'])
 
@@ -275,7 +277,7 @@ def eval_model(model,data_loader):
             
             result_array = np.concatenate((result_array,preds))
             
-         return result_array
+        return result_array
     
 
 
@@ -352,7 +354,7 @@ def train_model(model, criterion, optimizer, scheduler, num_epochs=25):
 #%%
 
 resnet_model = train_model(age_predictor,criterion,optimizer,scheduler,num_epochs=20)
-    
+#%%    
 
 def denormalize(inputs,age_min,age_max):
     return inputs * (age_max - age_min) + age_min
@@ -360,7 +362,7 @@ def denormalize(inputs,age_min,age_max):
 
 
 
-result_array = eval_model(resnet_model,test_data_loader)
+result_array = eval_model(age_predictor,test_data_loader)
 
 test_df['output'] = result_array
 
