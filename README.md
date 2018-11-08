@@ -2,7 +2,7 @@
 
 
 ## Description
-The aim of this project is to predict bone age in months from the X-Ray and Gender.<br>
+The aim of this project is to predict Bone Age (in months) from the X-Ray and Gender.<br>
 Dataset - https://www.kaggle.com/kmader/rsna-bone-age
 
 ## Neural Network Architecture 
