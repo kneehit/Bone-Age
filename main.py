@@ -365,7 +365,8 @@ def denormalize(inputs,age_min,age_max):
 result_array = eval_model(age_predictor,test_data_loader)
 
 test_df['output'] = result_array
-
+test_df['output'] = np.round(test_df['output'], decimals=2)
+test_df = test_df.reset_index()
 
 
    
