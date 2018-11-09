@@ -22,9 +22,11 @@ Predictions on the test dataset can be seen below
 ![alt text](images/pred_on_test.gif)
 
 ## Closing Thoughts
-Although the predictions are decent, there is certainly room for improvements. 
+Although the predictions are decent, there is certainly room for improvement. 
 Following things can be tried out:
-Changing the architecture 
+1. Changing the architecture 
   a. Adding more layers
-  b. Replacing ResNet layer by layers of other CNN architecture like Inception, ResNeXt, etc.
+  b. Replacing ResNet layers by layers of other CNN architecture like Inception, ResNeXt, etc.
+2. Using features from convolutional layers of a CNN which is pretrained on X-Rays of hands. 
+
 
