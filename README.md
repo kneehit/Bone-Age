@@ -25,7 +25,7 @@ Predictions on the test dataset can be seen below
 Although the predictions are decent, there is certainly room for improvement. 
 Following things can be tried out: <br>
 1. Changing the architecture <br>
-  a. Adding more layers <br>
+  a. Adding more layers - convolutional/FC/ResNet blocks <br>
   b. Replacing ResNet layers by layers of other CNN architecture like Inception, ResNeXt, etc. <br>
 2. Using features from convolutional layers of a CNN which is pretrained on X-Rays of hands. 
 
