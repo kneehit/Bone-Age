@@ -23,7 +23,7 @@ Predictions on the test dataset can be seen below
 
 ## Closing Thoughts
 Although the predictions are decent, there is certainly room for improvement. 
-Following things can be tried out: <br>
+Following things can be experimented: <br>
 1. Changing the architecture <br>
   a. Adding more layers - convolutional/FC/ResNet blocks <br>
   b. Replacing ResNet layers by layers of other CNN architecture like Inception, ResNeXt, etc. <br>
