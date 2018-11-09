@@ -20,3 +20,11 @@ Following are the challenges I encountered (and overcame) in this project:
 Predictions on the test dataset can be seen below
 
 ![alt text](images/pred_on_test.gif)
+
+## Closing Thoughts
+Although the predictions are decent, there is certainly room for improvements. 
+Following things can be tried out:
+Changing the architecture 
+  a. Adding more layers
+  b. Replacing ResNet layer by layers of other CNN architecture like Inception, ResNeXt, etc.
+
