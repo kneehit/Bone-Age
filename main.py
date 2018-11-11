@@ -48,11 +48,7 @@ np.random.seed(1498920)
 random.seed(1498920)
 torch.backends.cudnn.deterministic=True
 
-#%% https://discuss.pytorch.org/t/normalization-in-the-mnist-example/457/11
-# http://forums.fast.ai/t/images-normalization/4058/8
-# Could have gone for default 0.5. but images have more black regions
-
-
+#%% 
 # Sample random images from dataset (since loading all images will take time) 
 # and calculate mean and standard deviation for normalization 
 k = 100
@@ -90,8 +86,8 @@ print('Approx. Standard Deviation of Images in Dataset: ',avg_std)
 
 # Split Train Validation Test
 # Train - 10000 images
-# Val   - 1611  images
-# Test  - 1000  images
+# Val   -  1611 images
+# Test  -  1000 images
 
 dataset_size = len(image_filenames)
 val_size = dataset_size + 1611
@@ -213,17 +209,6 @@ test_data_loader = DataLoader(test_dataset,batch_size=4,shuffle=False,num_worker
 # Sanity Check 2
 sample_batch =  next(iter(test_data_loader))
 print(sample_batch)
-#%%
-
-
-
-
-
-
-
-
-
-
 
 #%%
 # Set loss as mean squared error (for continuous output)
@@ -371,7 +356,7 @@ test_df = test_df.reset_index()
 #%%
 rmse = np.sqrt(mean_squared_error(test_df['boneage'], test_df['output']))
 print(rmse)
-
+# 25.259
 #%%
 
 def display_preds(num):
