@@ -87,7 +87,7 @@ class AgePredictor(nn.Module):
         self.gen_fc_1 = nn.Linear(1,16)
         self.gen_relu = nn.ReLU()
         
-        # Concatenation Layer
+        # Feature Concatenation Layer
         self.cat_fc = nn.Linear(16+400,200)
         self.cat_relu = nn.ReLU()
         
@@ -98,7 +98,7 @@ class AgePredictor(nn.Module):
         # and sigmoid is used as final layer to predict values which when 
         # denormalized led to positive values
         self.sigmoid = nn.Sigmoid()
-
+        # Weight Initialization 
         for m in self.modules():
             if isinstance(m, nn.Conv2d):
                 nn.init.kaiming_normal_(m.weight, mode='fan_out', nonlinearity='relu')
