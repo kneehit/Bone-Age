@@ -13,7 +13,6 @@ import torch.nn as nn
 
 #%%
 
-
 def conv3x3(in_planes, out_planes, stride=1):
     """3x3 convolution with padding"""
     return nn.Conv2d(in_planes, out_planes, kernel_size=3, stride=stride,
@@ -23,6 +22,7 @@ def conv3x3(in_planes, out_planes, stride=1):
 
 #%%
 # Bottleneck block for ResNet to reduce dimensions
+
 class Bottleneck(nn.Module):
     expansion = 4
 
@@ -98,8 +98,8 @@ class AgePredictor(nn.Module):
         # Therefore input was scaled to range from 0 and 1
         # and sigmoid is used as final layer to predict values which when 
         # denormalized led to positive values
-        
         self.sigmoid = nn.Sigmoid()
+        
         # Weight Initialization 
         for m in self.modules():
             if isinstance(m, nn.Conv2d):
