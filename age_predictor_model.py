@@ -93,10 +93,12 @@ class AgePredictor(nn.Module):
         
         # Final Fully Connected Layer
         self.final_fc = nn.Linear(200,num_classes)
+        
         # Simply using linear layer (w/o sigmoid) led to network predicting negative values for age
         # Therefore input was scaled to range from 0 and 1
         # and sigmoid is used as final layer to predict values which when 
         # denormalized led to positive values
+        
         self.sigmoid = nn.Sigmoid()
         # Weight Initialization 
         for m in self.modules():
@@ -162,7 +164,7 @@ class AgePredictor(nn.Module):
         z = self.cat_relu(z)
 
 # =============================================================================
-#       Final FC
+#       Final FC Layer
 # =============================================================================
         
         z = self.final_fc(z)
@@ -172,7 +174,7 @@ class AgePredictor(nn.Module):
 
 
 #%%
-# Initialize our model
+# Initialize the model
 age_predictor = AgePredictor(block = Bottleneck,layers = [3, 4, 23, 3],num_classes =1)
 
 
