@@ -41,7 +41,7 @@ csv_path = 'bone_data/boneage-training-dataset.csv'
 
 
 
-# Reproducibility 
+# For reproducibility use the seeds below 
 torch.manual_seed(1498920)
 torch.cuda.manual_seed(1498920)
 np.random.seed(1498920)
