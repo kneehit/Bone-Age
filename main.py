@@ -25,7 +25,7 @@ import cv2
 import pandas as pd
 import glob
 import random
-import age_predictor_model
+from age_predictor_model import Bottleneck, AgePredictor
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
