@@ -25,7 +25,7 @@ import cv2
 import pandas as pd
 import glob
 import random
-from age_predictor_model import age_predictor
+import age_predictor_model
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
@@ -213,7 +213,7 @@ print(sample_batch)
 #%%
 # Set loss as mean squared error (for continuous output)
 # Initialize Stochastic Gradient Descent optimizer and learning rate scheduler
-
+age_predictor = AgePredictor(block = age_predictor_model.Bottleneck,layers = [3, 4, 23, 3],num_classes =1)
 age_predictor = age_predictor.to(device)
 criterion = nn.MSELoss()
 optimizer = optim.SGD(age_predictor.parameters(), lr=0.001, momentum=0.9)
