@@ -212,7 +212,7 @@ print(sample_batch)
 
 #%%
 # Initialize the model
-age_predictor = AgePredictor(block = age_predictor_model.Bottleneck,layers = [3, 4, 23, 3],num_classes =1)
+age_predictor = AgePredictor(block = Bottleneck,layers = [3, 4, 23, 3],num_classes =1)
 
 
 #%%
