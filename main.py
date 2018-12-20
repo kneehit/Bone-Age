@@ -211,9 +211,14 @@ sample_batch =  next(iter(test_data_loader))
 print(sample_batch)
 
 #%%
+# Initialize the model
+age_predictor = AgePredictor(block = age_predictor_model.Bottleneck,layers = [3, 4, 23, 3],num_classes =1)
+
+
+#%%
 # Set loss as mean squared error (for continuous output)
 # Initialize Stochastic Gradient Descent optimizer and learning rate scheduler
-age_predictor = AgePredictor(block = age_predictor_model.Bottleneck,layers = [3, 4, 23, 3],num_classes =1)
+
 age_predictor = age_predictor.to(device)
 criterion = nn.MSELoss()
 optimizer = optim.SGD(age_predictor.parameters(), lr=0.001, momentum=0.9)
