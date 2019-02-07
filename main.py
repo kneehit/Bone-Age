@@ -33,7 +33,7 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 
 #%%
-# paths
+# Image and CSV paths
 train_dataset_path = 'bone_data/train/'
 test_dataset_path = 'bone_data/test/'
 val_dataset_path = 'bone_data/validation/'
