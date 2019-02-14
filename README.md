@@ -2,7 +2,6 @@
 
 ![alt text](images/flowchart.png)
 
-
 ## Description
 The aim of this project is to predict Bone Age (in months) from the X-Ray and Gender.<br>
 Dataset - https://www.kaggle.com/kmader/rsna-bone-age
