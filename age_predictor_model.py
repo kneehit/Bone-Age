@@ -6,7 +6,6 @@ Created on Sun Aug 19 12:17:34 2018
 @author: kneehit
 """
 
-
 import torch
 import torch.nn as nn
 
