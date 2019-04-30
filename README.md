@@ -16,7 +16,7 @@ Following are the challenges I encountered (and overcame) in this project:
 
 
 ## Results
-Predictions on the test dataset can be seen below
+Predictions (in number of months) on the test dataset can be seen below
 
 ![alt text](images/pred_on_test.gif)
 
