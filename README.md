@@ -14,7 +14,6 @@ Following are the challenges I encountered (and overcame) in this project:
 2. Unlike most image recognition problem, the target variable is continuous and the input image has only single channel.
 3. Since the ouput is continuous, the network can predict negative values (whereas age can only be positive).
 
-
 ## Results
 Predictions (in number of months) on the test dataset can be seen below
 
