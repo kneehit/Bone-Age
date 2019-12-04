@@ -15,7 +15,6 @@ import numpy as np
 from torchvision import transforms
 import os
 #os.chdir('/home/kneehit/Data Science/Bone Age Kaggle/PyTorch')
-
 from torch.utils.data import Dataset, DataLoader
 import cv2
 import pandas as pd
